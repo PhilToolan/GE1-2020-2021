@@ -238,7 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elements: 12
   radius: 1
-  rings: 10
+  rings: 15
   shape: {fileID: 5843693292088087312, guid: 094a70605950ab84a87d5255b0949718, type: 3}
 --- !u!4 &1150639172
 Transform:
