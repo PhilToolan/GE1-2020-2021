@@ -6,8 +6,6 @@ public class OrbController : MonoBehaviour
 {
 
     public TankController tankController;
-    public FpsController fpsController;
-    public EnemyTankController enemyTankController;
     public RotateMe rotateMe;
 
     // Start is called before the first frame update
@@ -27,9 +25,9 @@ public class OrbController : MonoBehaviour
     {
         if (col.gameObject.tag == "Main Camera")
         {
-            !tankController.enabled = tankController.enabled;
-            fpsController.enabled = !fpsController.enabled;
-            enemyTankController.enabled = !enemyTankController.enabled;
+            tankController.enabled = !tankController.enabled;
+            GetComponent<FpsController>().enabled = false;
+            GetComponent<AITank>().enabled = false;
             rotateMe.enabled = !rotateMe.enabled;
         }
     }
